@@ -1,0 +1,13 @@
+Hosting environment: Production
+Content root path: C:\inetpub\wwwroot\SQLhomework
+Now listening on: http://127.0.0.1:16372
+Application started. Press Ctrl+C to shut down.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Microsoft.EntityFrameworkCore.Query[20500]
+      The LINQ expression 'LastOrDefault()' could not be translated and will be evaluated locally.
+warn: Microsoft.EntityFrameworkCore.Query[10103]
+      Query: '(from User0 s in DbSet<User0> select [s].UserId).LastOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+warn: Microsoft.EntityFrameworkCore.Query[20500]
+      The LINQ expression 'LastOrDefault()' could not be translated and will be evaluated locally.
+Application is shutting down...

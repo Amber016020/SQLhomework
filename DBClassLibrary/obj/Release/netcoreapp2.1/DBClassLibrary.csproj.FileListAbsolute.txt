@@ -1,0 +1,11 @@
+C:\inetpub\wwwroot\SQLhomework\DBClassLibrary\bin\Release\netcoreapp2.1\DBClassLibrary.deps.json
+C:\inetpub\wwwroot\SQLhomework\DBClassLibrary\bin\Release\netcoreapp2.1\DBClassLibrary.runtimeconfig.json
+C:\inetpub\wwwroot\SQLhomework\DBClassLibrary\bin\Release\netcoreapp2.1\DBClassLibrary.runtimeconfig.dev.json
+C:\inetpub\wwwroot\SQLhomework\DBClassLibrary\bin\Release\netcoreapp2.1\DBClassLibrary.dll
+C:\inetpub\wwwroot\SQLhomework\DBClassLibrary\bin\Release\netcoreapp2.1\DBClassLibrary.pdb
+C:\inetpub\wwwroot\SQLhomework\DBClassLibrary\obj\Release\netcoreapp2.1\DBClassLibrary.csprojAssemblyReference.cache
+C:\inetpub\wwwroot\SQLhomework\DBClassLibrary\obj\Release\netcoreapp2.1\DBClassLibrary.csproj.CoreCompileInputs.cache
+C:\inetpub\wwwroot\SQLhomework\DBClassLibrary\obj\Release\netcoreapp2.1\DBClassLibrary.AssemblyInfoInputs.cache
+C:\inetpub\wwwroot\SQLhomework\DBClassLibrary\obj\Release\netcoreapp2.1\DBClassLibrary.AssemblyInfo.cs
+C:\inetpub\wwwroot\SQLhomework\DBClassLibrary\obj\Release\netcoreapp2.1\DBClassLibrary.dll
+C:\inetpub\wwwroot\SQLhomework\DBClassLibrary\obj\Release\netcoreapp2.1\DBClassLibrary.pdb

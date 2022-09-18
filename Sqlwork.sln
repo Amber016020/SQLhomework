@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sqlwork", "Sqlwork\Sqlwork.csproj", "{39A27D13-6461-447A-9814-5B298ECEF2A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBClassLibrary", "DBClassLibrary\DBClassLibrary.csproj", "{AD1F4536-7EC5-40E2-B351-6DE7A493E181}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39A27D13-6461-447A-9814-5B298ECEF2A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39A27D13-6461-447A-9814-5B298ECEF2A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39A27D13-6461-447A-9814-5B298ECEF2A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39A27D13-6461-447A-9814-5B298ECEF2A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD1F4536-7EC5-40E2-B351-6DE7A493E181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD1F4536-7EC5-40E2-B351-6DE7A493E181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD1F4536-7EC5-40E2-B351-6DE7A493E181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD1F4536-7EC5-40E2-B351-6DE7A493E181}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AADA9379-49DE-4676-B4F1-780CF44EB69D}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,55 @@
+﻿@model IEnumerable<DBClassLibrary.ViewModels.AnimalViewModels>
+@{
+    ViewData["Title"] = "動物的詳細資訊";
+}
+
+<h2>詳細資料</h2>
+<div>
+    <hr />
+    <dl class="dl-horizontal" id="def-p">
+        @foreach (var temp in Model)
+        {
+            <img class="large" src="@temp.animal.AlbumFile" alt="圖片" />
+            <div class="caption">
+                <p>目前所在縣市：@temp.area.AreaName</p>
+                <p>收容所：@temp.shelter.ShelterPlace</p>
+                <p>地點：@temp.shelter.ShelterAddress</p>
+                <p>收容所電話：@temp.shelter.ShelterTel</p>
+                <p>發現地：@temp.animal.AnimalFoundplace</p>
+                <p>動物ID：@temp.animalPlace.AnimalId</p>
+                <p>毛色：@temp.animaldetal.AnimalColour</p>
+                <p>性別：@temp.animaldetal.AnimalSex</p>
+                <p>年紀：@temp.animaldetal.AnimalAge</p>
+                <p>體型：@temp.animaldetal.AnimalBodytype</p>
+                <p>備註：@temp.animalHeathe.AnimalRemark</p>
+                <p>注意事項：@temp.animalHeathe.AnimalCaption</p>
+                <p>遺失時間：@temp.animalTime.AnimalOpendate</p>
+                <p>
+                </p>
+            </div>
+        }
+         </dl>
+
+        @*<h3>model.animal.AnimalFoundplace</h3>
+        <p>model.animalPlace.AnimalId</p>
+        <p>model.animaldetal.AnimalColour</p>
+        <p>model.animaldetal.AnimalSex</p>
+        <p>model.animaldetal.AnimalAge</p>
+        <p>model.animaldetal.AnimalBodytype</p>
+        <p>model.animalHeathe.AnimalRemark</p>
+        <p>model.animalHeathe.AnimalCaption</p>
+        <p>model.animalTime.AnimalOpendate</p>*@
+        @*<dt>特徵</dt>
+        <dd>@Model.AnimalUpdate</dd>
+
+        <dt>特徵</dt>
+        <dd>@Model.AnimalFoundplace</dd>
+
+        <dt>特徵</dt>
+        <dd>@Model.AnimalUpdate</dd>*@
+</div>
+<p>
+    @Html.ActionLink("回首頁", "HomePage", null, new { @class = "btn btn-default" })
+</p>
+
+

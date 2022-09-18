@@ -1,0 +1,9 @@
+Hosting environment: Production
+Content root path: C:\inetpub\wwwroot\SQLhomework
+Now listening on: http://127.0.0.1:31603
+Application started. Press Ctrl+C to shut down.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Microsoft.EntityFrameworkCore.Query[10102]
+      Query: '(from Animal a in DbSet<Animal> join AnimalDetal b in DbSet<AnimalDetal> on [a].AnimalId equals [b]....' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results.
+Application is shutting down...

@@ -1,0 +1,43 @@
+﻿@model List<DBClassLibrary.ViewModels.CatViewModel>
+@{
+    ViewData["Title"] = "長毛貓";
+}
+
+<div id="font-family-default">
+    <h2>長毛貓</h2>
+    <style>
+        img.large {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <ul class="nav nav-tabs">
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#cat">貓<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="/SQLhomework/home/LongHair">長毛</a></li><!--<a data-toggle="tab" href="#SmallDog">小型犬</a>-->
+                <li><a href="/SQLhomework/home/ShortHairs">短毛</a></li>
+                <li><a href="/SQLhomework/home/SpooltHairs">捲毛</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="row">
+        @foreach (var temp in @Model)
+        {
+            <div class="col-sm-4 col-md-3">
+                <div class="thumbnail">
+                    <img class="large" src="@temp.CatPicture" alt="圖片">
+                    <div class="caption">
+                        <h3>@temp.CatKind</h3>
+                        <p>@temp.CatHair</p>
+                        <p>
+                            <a href="@Url.Action("CatIntroductionDetails", new { id = temp.CatId })" class="btn btn-default" role="button">
+                                詳細資訊
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

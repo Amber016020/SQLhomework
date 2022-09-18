@@ -1,0 +1,56 @@
+﻿@model List<DBClassLibrary.ViewModels.DogViewModels>
+@{
+    ViewData["Title"] = "超大型犬";
+}
+
+<div id="font-family-default">
+    <h2>超大型犬</h2>
+
+    <ul class="nav nav-tabs">
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#dog">犬<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="/SQLhomework/home/SmallDog">小型犬</a></li><!--<a data-toggle="tab" href="#SmallDog">小型犬</a>-->
+                <li><a href="/SQLhomework/home/MediumDog">中型犬</a></li>
+                <li><a href="/SQLhomework/home/BigDog">大型犬</a></li>
+                <li><a href="/SQLhomework/home/SuperBigDog">超大型犬</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <!--<ul class="nav nav-tabs">
+        <li><a data-toggle="tab" href="#home">Home</a></li>
+        <li><a data-toggle="tab" href="#menu1">Page 1</a></li>
+        <li><a data-toggle="tab" href="#menu2">Page 2</a></li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#dog">犬<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a data-toggle="tab" href="#SmallDog">小型犬</a></li>
+                <li><a data-toggle="tab" href="#MediumDog">中型犬</a></li>
+                <li><a data-toggle="tab" href="#BigDog">大型犬</a></li>
+            </ul>
+        </li>
+    </ul>-->
+    <div class="row">
+        @foreach (var temp in @Model)
+        {
+            <div class="col-sm-4 col-md-3">
+                <div class="thumbnail">
+                    <img class="large" src="@temp.DogPicture" alt="圖片">
+                    <div class="caption">
+                        <h3>@temp.DogKind</h3>
+                        <p>@temp.DogType</p>
+                        <p>@temp.DogFeature1</p>
+                        <p>
+                            <a href="@Url.Action("Details", new { id = temp.DogId })" class="btn btn-default" role="button">
+                                詳細資訊
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+

@@ -1,0 +1,9 @@
+Hosting environment: Production
+Content root path: C:\inetpub\wwwroot\SQLhomework
+Now listening on: http://127.0.0.1:31106
+Application started. Press Ctrl+C to shut down.
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+warn: Microsoft.EntityFrameworkCore.Query[10103]
+      Query: '(from User s in DbSet<User> from Animal d in DbSet<Animal> select [s]).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+Application is shutting down...

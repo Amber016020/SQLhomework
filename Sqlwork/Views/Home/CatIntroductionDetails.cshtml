@@ -1,0 +1,76 @@
+﻿@model DBClassLibrary.Models.Cat
+@{
+    ViewData["Title"] = "CatIntroductionDetails";
+}
+
+
+<h2>@Model.CatKind</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+
+        </dt>
+
+        <dd>
+            <img src="@Model.CatPicture" width="200" />
+        </dd>
+
+        <dt>
+            名稱
+        </dt>
+
+        <dd>
+            @Model.CatKind
+        </dd>
+
+        <dt>
+            毛長
+        </dt>
+
+        <dd>
+            @Model.CatHair
+        </dd>
+
+        <dt>
+            描述
+        </dt>
+
+        <dd>
+            @Model.CatFeature
+        </dd>
+
+        <dt>
+            特徵
+        </dt>
+
+        <dd>
+            @Model.CatFocus
+        </dd>
+
+        <dt>
+            詳細特徵
+        </dt>
+
+        <dd>
+            @Model.CatFocusIssues
+        </dd>
+
+        <dt>
+            照顧重點
+        </dt>
+
+        <dd>
+            @Model.CatPersonality
+        </dd>
+    </dl>
+
+
+</div>
+<p>
+    @Html.ActionLink("回首頁", "HomePage", null, new { @class = "btn btn-default" })
+</p>
+
+
+

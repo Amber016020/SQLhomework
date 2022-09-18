@@ -1,0 +1,66 @@
+﻿@model DBClassLibrary.Models.User0
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>註冊帳戶</h2>
+
+<h4>名字、密碼必填</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @*<div class="form-group">
+            <label asp-for="UserId" class="control-label"></label>
+            <input asp-for="UserId" class="form-control" />
+            <span asp-validation-for="UserId" class="text-danger"></span>
+        </div>*@
+            @ViewBag.message
+            <div class="form-group">
+                <label asp-for="UserName" class="control-label">名稱</label>
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserPassword" class="control-label">密碼</label>
+                <input asp-for="UserPassword" class="form-control" />
+                <span asp-validation-for="UserPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserTel" class="control-label">連絡電話</label>
+                <input asp-for="UserTel" class="form-control" />
+                <span asp-validation-for="UserTel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserEmail" class="control-label">信箱</label>
+                <input asp-for="UserEmail" class="form-control" />
+                <span asp-validation-for="UserEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserSex" class="control-label">性別</label>
+                <input asp-for="UserSex" class="form-control" />
+                <span asp-validation-for="UserSex" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserBirthday" class="control-label">生日</label>
+                <input type="date" asp-for="UserBirthday" class="form-control" />
+                <span asp-validation-for="UserBirthday" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserAddress" class="control-label">地址</label>
+                <input asp-for="UserAddress" class="form-control" />
+                <span asp-validation-for="UserAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

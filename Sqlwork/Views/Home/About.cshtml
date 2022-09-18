@@ -1,0 +1,38 @@
+﻿@model IEnumerable<DBClassLibrary.ViewModels.AnimalViewModels>
+@{
+    ViewData["Title"] = "認養毛夥伴";
+}
+<div id="font-family-default">
+    <h2>全部貓狗</h2>
+    <style>
+        img.large {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+
+    <div class="row">
+        @foreach (var temp in Model)
+        {
+            <div class="col-sm-4 col-md-3">
+                <div class="thumbnail">
+                    <img class="large" src="@temp.animal.AlbumFile" alt="圖片" />
+                    <div class="caption">
+                        <h3>@temp.animal.AnimalKind</h3>
+                        <p>性別：@temp.animaldetal.AnimalSex</p>
+                        <p>年紀：@temp.animaldetal.AnimalAge</p>
+                        <p>體型：@temp.animaldetal.AnimalBodytype</p>
+                        <p>所在縣市：@temp.area.AreaName</p>
+                        <p>領養狀態：@temp.animal.AnimalStatus</p>
+                        <p>
+                            @*<a href="#" class="btn btn-primary" role="button">認養</a>*@
+                            <a href="@Url.Action("AnimalDetails", new { id = temp.animal.AnimalId })" class="btn btn-default" role="button">
+                                詳細資訊
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
